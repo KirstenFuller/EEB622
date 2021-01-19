@@ -1,0 +1,9 @@
+N=5
+Predictor=runif(N,min=0,max=1)
+Intercept=5
+Slope=10
+sigma=1.5
+mu=Intercept+Slope*Predictor
+plot(mu~Predictor,pch=19)
+Response=rnorm(N,mean=mu,sd=sigma)
+plot(Response~Predictor,pch=19)
